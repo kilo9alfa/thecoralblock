@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+public/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Obsidian vault files (keep local, don't commit)
+content/.obsidian/
+content/.obsidian.backup*/
+
+# Private content (keep local, don't commit)
+content/private/
