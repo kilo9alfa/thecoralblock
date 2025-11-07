@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Preview - The Coral Block</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1a2f38 0%, #244855 100%);
+            color: #e8f4f8;
+            padding: 3rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #FF6F61;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #b0d4e1;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .preview-card {
+            background: rgba(36, 72, 85, 0.6);
+            border: 2px solid #2d5263;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .preview-card h2 {
+            color: #b0d4e1;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .logo-display {
+            background: white;
+            border-radius: 8px;
+            padding: 3rem;
+            margin-bottom: 1.5rem;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-display.dark {
+            background: #0a1419;
+        }
+
+        .logo-display.teal {
+            background: #1a2f38;
+        }
+
+        .logo-display.pattern {
+            background:
+                repeating-linear-gradient(45deg, #f0f0f0 0px, #f0f0f0 10px, #e0e0e0 10px, #e0e0e0 20px);
+        }
+
+        .logo-display img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .size-label {
+            color: #7a9fad;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        /* Mock header preview */
+        .mock-header {
+            background: rgba(36, 72, 85, 0.9);
+            border: 2px solid #2d5263;
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .mock-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .mock-logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .mock-logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e8f4f8;
+        }
+
+        .mock-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .mock-nav a {
+            color: #b0d4e1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-coral {
+            background: #FF6F61;
+            color: white;
+        }
+
+        .btn-coral:hover {
+            background: #ff5a4f;
+            transform: translateY(-2px);
+        }
+
+        .btn-teal {
+            background: transparent;
+            color: #b0d4e1;
+            border: 2px solid #2d5263;
+        }
+
+        .btn-teal:hover {
+            background: #2d5263;
+            color: #e8f4f8;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(36, 72, 85, 0.4);
+            border-radius: 12px;
+        }
+
+        .actions h2 {
+            color: #FF6F61;
+            margin-bottom: 1rem;
+        }
+
+        .actions p {
+            color: #b0d4e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box {
+            background: rgba(255, 111, 97, 0.1);
+            border: 2px solid #FF6F61;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-box h3 {
+            color: #FF6F61;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            color: #b0d4e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Logo Preview</h1>
+        <p class="subtitle">Using the actual PNG from your screenshot</p>
+
+        <div class="info-box">
+            <h3>✅ Using Original PNG Image</h3>
+            <p>Logo file: logo.png (740×690px, with transparent background)</p>
+        </div>
+
+        <!-- Mock Website Header -->
+        <h2 style="color: #b0d4e1; margin-bottom: 1rem;">How it looks in the header:</h2>
+        <div class="mock-header">
+            <a href="#" class="mock-logo">
+                <img src="logo.png" alt="The Coral Block Logo">
+                <span class="mock-logo-text">The Coral Block</span>
+            </a>
+            <nav class="mock-nav">
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#support">Support</a>
+            </nav>
+        </div>
+
+        <!-- Different Backgrounds -->
+        <h2 style="color: #b0d4e1; margin-bottom: 1.5rem; text-align: center;">Logo on Different Backgrounds</h2>
+        <div class="preview-grid">
+            <div class="preview-card">
+                <h2>White Background</h2>
+                <div class="logo-display">
+                    <img src="logo.png" alt="Logo on white" style="width: 200px;">
+                </div>
+                <div class="size-label">Light mode website</div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Dark Background</h2>
+                <div class="logo-display dark">
+                    <img src="logo.png" alt="Logo on dark" style="width: 200px;">
+                </div>
+                <div class="size-label">Dark/black backgrounds</div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Deep Teal Background</h2>
+                <div class="logo-display teal">
+                    <img src="logo.png" alt="Logo on teal" style="width: 200px;">
+                </div>
+                <div class="size-label">Dark mode website</div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Pattern Background</h2>
+                <div class="logo-display pattern">
+                    <img src="logo.png" alt="Logo on pattern" style="width: 200px;">
+                </div>
+                <div class="size-label">Complex backgrounds</div>
+            </div>
+        </div>
+
+        <!-- Different Sizes -->
+        <h2 style="color: #b0d4e1; margin-bottom: 1.5rem; text-align: center;">Different Sizes</h2>
+        <div class="preview-grid">
+            <div class="preview-card">
+                <h2>Large (200px)</h2>
+                <div class="logo-display">
+                    <img src="logo.png" alt="Logo large" style="width: 200px;">
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Medium (120px)</h2>
+                <div class="logo-display">
+                    <img src="logo.png" alt="Logo medium" style="width: 120px;">
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Small (80px)</h2>
+                <div class="logo-display">
+                    <img src="logo.png" alt="Logo small" style="width: 80px;">
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <h2>Tiny (50px)</h2>
+                <div class="logo-display">
+                    <img src="logo.png" alt="Logo tiny" style="width: 50px;">
+                </div>
+                <div class="size-label">Minimum size</div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <h2>Ready to Deploy?</h2>
+            <p>The logo is now using your exact PNG image with transparent background</p>
+            <button class="btn btn-coral" onclick="alert('Tell Claude to push when ready!')">✓ Looks Good - Ready to Push</button>
+            <button class="btn btn-teal" onclick="alert('Tell Claude what adjustments you need')">Need Changes</button>
+        </div>
+    </div>
+</body>
+</html>

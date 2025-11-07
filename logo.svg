@@ -1,29 +1,47 @@
-<svg width="100" height="65" viewBox="0 0 100 65" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="coral" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff8577"/>
-      <stop offset="100%" style="stop-color:#FF6F61"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Left Block (Teal outline) -->
+<svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Block (white/outline only - like reference) -->
   <g>
-    <path d="M 5 30 L 20 22 L 35 30 L 20 38 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M 5 30 L 5 45 L 20 53 L 20 38 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M 20 38 L 20 53 L 35 45 L 35 30 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Top face -->
+    <path d="M 10 42 L 28 32 L 46 42 L 28 52 Z" fill="white" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 10 42 L 10 60 L 28 70 L 28 52 Z" fill="white" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 28 52 L 28 70 L 46 60 L 46 42 Z" fill="#f5f5f5" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Center vertical line -->
+    <line x1="28" y1="32" x2="28" y2="52" stroke="#5a6872" stroke-width="3.5"/>
   </g>
 
-  <!-- Chain links -->
-  <g>
-    <ellipse cx="42" cy="34" rx="4.5" ry="6.5" fill="none" stroke="#5a8793" stroke-width="2" transform="rotate(20 42 34)"/>
-    <path d="M 46 32 Q 52 31 56 32" fill="none" stroke="#5a8793" stroke-width="2" stroke-linecap="round"/>
-    <ellipse cx="62" cy="34" rx="4.5" ry="6.5" fill="none" stroke="#5a8793" stroke-width="2" transform="rotate(-20 62 34)"/>
+  <!-- Chain connecting blocks -->
+  <g fill="none" stroke="#5a6872" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left connection from block -->
+    <path d="M 46 51 Q 52 54 58 52"/>
+
+    <!-- First chain link -->
+    <path d="M 56 47 Q 53 44 56 42 Q 59 40 62 42 Q 65 45 62 48 Q 59 50 56 47 Z"/>
+
+    <!-- Connection between links -->
+    <path d="M 62 47 Q 68 50 74 48"/>
+
+    <!-- Lower connecting curve -->
+    <path d="M 58 52 Q 60 58 64 62"/>
+
+    <!-- Second chain link (lower) -->
+    <path d="M 62 60 Q 59 57 62 55 Q 65 53 68 55 Q 71 58 68 61 Q 65 63 62 60 Z"/>
+
+    <!-- Right connection to coral block -->
+    <path d="M 68 60 Q 74 58 80 60"/>
+    <path d="M 74 48 Q 80 46 86 48"/>
   </g>
 
-  <!-- Right Block (Coral filled) -->
+  <!-- Right Block (coral filled - like reference) -->
   <g>
-    <path d="M 65 25 L 80 17 L 95 25 L 80 33 Z" fill="url(#coral)" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M 65 25 L 65 40 L 80 48 L 80 33 Z" fill="#FF6F61" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M 80 33 L 80 48 L 95 40 L 95 25 Z" fill="#ff8577" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Top face -->
+    <path d="M 90 32 L 108 22 L 126 32 L 108 42 Z" fill="#FFB5A8" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 90 32 L 90 50 L 108 60 L 108 42 Z" fill="#FF8F7F" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 108 42 L 108 60 L 126 50 L 126 32 Z" fill="#FFA08F" stroke="#5a6872" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Center vertical line -->
+    <line x1="108" y1="22" x2="108" y2="42" stroke="#5a6872" stroke-width="3.5"/>
   </g>
 </svg>

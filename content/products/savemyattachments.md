@@ -4,11 +4,13 @@ description: Automatically process Gmail emails, save attachments to Google Driv
 draft: false
 ---
 
-# SaveMyAttachments
+# Save My Attachments
 
-**Automatically process your Gmail emails with AI-powered intelligence**
+**Problem we are addressing - How to process emails and their attachments automatically, from Gmail into Google Sheets**
 
-SaveMyAttachments is a Google Workspace Add-on that automatically processes your Gmail emails, saves attachments to Google Drive, logs email data to Google Sheets, and generates AI-powered summaries using OpenRouter.
+SaveMyAttachments is a Google Workspace Add-on that automatically processes your Gmail emails, saves attachments to Google Drive, logs email data to Google Sheets, and generates AI-powered summaries of the emails received.
+
+You wil have in an spreadsheet all relevant emails and attachments that you care for, correctly classified and be able to share them with your team mates and collaborators. 
 
 ## Key Features
 
