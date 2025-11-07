@@ -142,15 +142,17 @@ function generatePage({ title, description, content, category }) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title} - The Coral Block</title>
     <meta name="description" content="${description}">
+    <meta name="theme-color" content="#f8f8f6">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+    <header class="site-header">
+        <nav class="nav-container">
             <a href="/" class="logo">The Coral Block</a>
             <div class="nav-links">
-                <a href="/products.html">Products</a>
-                <a href="/docs.html">Docs</a>
+                <a href="/#products">Products</a>
+                <a href="/#about">About</a>
                 <a href="/support.html">Support</a>
             </div>
         </nav>
@@ -160,14 +162,44 @@ function generatePage({ title, description, content, category }) {
         ${content}
     </main>
 
-    <footer>
-        <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
-        <div class="footer-links">
-            <a href="/docs/privacy-policy.html">Privacy Policy</a>
-            <a href="/docs/terms-of-service.html">Terms of Service</a>
-            <a href="/support.html">Support</a>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
+            <div class="footer-links">
+                <a href="/docs/privacy-policy.html">Privacy Policy</a>
+                <a href="/docs/terms-of-service.html">Terms of Service</a>
+                <a href="/support.html">Support</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Theme management
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkTheme = localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme'); // Default to dark
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1a1a1a');
+            } else {
+                document.body.classList.remove('dark-theme');
+                themeToggle.textContent = 'Dark Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8f8f6');
+            }
+        }
+
+        // Apply theme on page load
+        applyTheme(isDarkTheme);
+
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            isDarkTheme = !isDarkTheme;
+            applyTheme(isDarkTheme);
+            localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+        });
+    </script>
 </body>
 </html>`;
 }

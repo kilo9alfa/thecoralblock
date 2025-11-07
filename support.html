@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - The Coral Block</title>
     <meta name="description" content="Get help and support for The Coral Block productivity tools">
+    <meta name="theme-color" content="#f8f8f6">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
     <header class="site-header">
         <nav class="nav-container">
             <a href="/" class="logo">The Coral Block</a>
@@ -83,5 +85,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Theme management
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkTheme = localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme'); // Default to dark
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1a1a1a');
+            } else {
+                document.body.classList.remove('dark-theme');
+                themeToggle.textContent = 'Dark Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8f8f6');
+            }
+        }
+
+        // Apply theme on page load
+        applyTheme(isDarkTheme);
+
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            isDarkTheme = !isDarkTheme;
+            applyTheme(isDarkTheme);
+            localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+        });
+    </script>
 </body>
 </html>
