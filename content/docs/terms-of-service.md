@@ -1,6 +1,6 @@
 ---
 title: Terms of Service
-description: Terms of service for Lula.ai products and services
+description: Terms of service for The Coral Block products and services
 draft: false
 ---
 
@@ -10,11 +10,11 @@ draft: false
 
 ## 1. Acceptance of Terms
 
-By accessing or using Lula.ai products and services ("Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use our Services.
+By accessing or using The Coral Block products and services ("Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use our Services.
 
 ## 2. Description of Services
 
-Lula.ai provides productivity and automation tools, including but not limited to:
+The Coral Block provides productivity and automation tools, including but not limited to:
 
 - **SaveMyAttachments**: A Google Workspace Add-on that processes Gmail emails, saves attachments to Google Drive, and generates AI-powered summaries
 
@@ -57,7 +57,7 @@ Services are available through subscription plans available on the Google Worksp
 
 ### 4.3 Refunds
 
-Refunds are handled according to Google Workspace Marketplace policies. Contact support@lula.ai for refund requests.
+Refunds are handled according to Google Workspace Marketplace policies. Contact support@thecoralblock.com for refund requests.
 
 ### 4.4 Cancellation
 
@@ -98,7 +98,7 @@ You are solely responsible for:
 
 ### 6.1 Our Rights
 
-All intellectual property rights in the Services, including software, documentation, trademarks, and logos, belong to Lula.ai or our licensors.
+All intellectual property rights in the Services, including software, documentation, trademarks, and logos, belong to The Coral Block or our licensors.
 
 ### 6.2 Your Rights
 
@@ -151,7 +151,7 @@ Services are provided "AS IS" and "AS AVAILABLE" without warranties of any kind,
 
 ### 9.2 Limitation of Liability
 
-To the maximum extent permitted by law, Lula.ai shall not be liable for:
+To the maximum extent permitted by law, The Coral Block shall not be liable for:
 - Indirect, incidental, special, or consequential damages
 - Loss of profits, data, or business opportunities
 - Damages resulting from third-party services (Google, OpenRouter)
@@ -167,7 +167,7 @@ We are not responsible for:
 
 ## 10. Indemnification
 
-You agree to indemnify and hold harmless Lula.ai, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from:
+You agree to indemnify and hold harmless The Coral Block, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from:
 - Your use of the Services
 - Your violation of these Terms
 - Your violation of any rights of another party
@@ -213,7 +213,7 @@ You agree to resolve disputes individually and waive any right to participate in
 
 ### 13.1 Entire Agreement
 
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and Lula.ai regarding use of the Services.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and The Coral Block regarding use of the Services.
 
 ### 13.2 Modifications
 
@@ -234,8 +234,8 @@ You may not assign or transfer these Terms or your account without our written c
 ### 13.6 Contact
 
 For questions about these Terms, contact us at:
-- **Email:** legal@lula.ai
-- **Support:** support@lula.ai
+- **Email:** legal@thecoralblock.com
+- **Support:** support@thecoralblock.com
 
 ## 14. Google Workspace Marketplace
 
@@ -261,6 +261,6 @@ You agree to comply with all applicable export control laws and regulations. You
 
 **Effective Date:** November 6, 2025
 
-By using Lula.ai Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+By using The Coral Block Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
 
-For questions or concerns, contact us at support@lula.ai
+For questions or concerns, contact us at support@thecoralblock.com

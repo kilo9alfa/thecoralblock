@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-description: Privacy policy for Lula.ai products and services
+description: Privacy policy for The Coral Block products and services
 draft: false
 ---
 
@@ -10,7 +10,7 @@ draft: false
 
 ## Introduction
 
-Lula.ai ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our products and services.
+The Coral Block ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our products and services.
 
 ## Information We Collect
 
@@ -97,7 +97,7 @@ You have the right to:
 - **Opt-Out**: Unsubscribe from marketing communications
 - **Data Portability**: Export your data in commonly used formats
 
-To exercise these rights, contact us at: privacy@lula.ai
+To exercise these rights, contact us at: privacy@thecoralblock.com
 
 ## Children's Privacy
 
@@ -137,9 +137,9 @@ We do not sell personal information.
 
 For privacy-related questions or concerns:
 
-**Email:** privacy@lula.ai
-**Support:** support@lula.ai
+**Email:** privacy@thecoralblock.com
+**Support:** support@thecoralblock.com
 
 ---
 
-*This privacy policy is effective as of the date listed above and applies to all Lula.ai products and services.*
+*This privacy policy is effective as of the date listed above and applies to all The Coral Block products and services.*

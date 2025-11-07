@@ -66,7 +66,7 @@ For detailed documentation, see the [SaveMyAttachments User Manual](https://gith
 
 ## Support
 
-Need help? Contact us at [support@lula.ai](mailto:support@lula.ai) or visit our [Support page](/support.html).
+Need help? Contact us at [support@thecoralblock.com](mailto:support@thecoralblock.com) or visit our [Support page](/support.html).
 
 ## Privacy & Security
 

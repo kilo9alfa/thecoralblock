@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide explains how to deploy Lula.ai to Cloudflare Pages.
+This guide explains how to deploy The Coral Block to Cloudflare Pages.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ First, create a new repository on GitHub and push your code:
 
 ```bash
 # Add GitHub remote (replace with your repository URL)
-git remote add origin git@github.com:yourusername/Lula.ai.git
+git remote add origin git@github.com:yourusername/The Coral Block.git
 
 # Push to GitHub
 git push -u origin main
@@ -28,7 +28,7 @@ git push -u origin main
 2. Go to **Pages** in the left sidebar
 3. Click **Create a project**
 4. Click **Connect to Git**
-5. Select your **Lula.ai** repository
+5. Select your **The Coral Block** repository
 6. Configure build settings:
 
 #### Build Configuration
@@ -62,7 +62,7 @@ If your domain is already on Cloudflare:
 1. Go to your Pages project
 2. Click **Custom domains**
 3. Click **Set up a custom domain**
-4. Enter your domain (e.g., `lula.ai`)
+4. Enter your domain (e.g., `thecoralblock.com`)
 5. Cloudflare automatically configures DNS
 
 ### Option 2: External Domain
@@ -121,7 +121,7 @@ git commit -m "Add new documentation page"
 git push
 ```
 
-Page will be available at: `https://lula.ai/docs/new-page.html`
+Page will be available at: `https://thecoralblock.com/docs/new-page.html`
 
 #### Product Page
 

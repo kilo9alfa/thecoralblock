@@ -1,17 +1,17 @@
-# Lula.ai
+# The Coral Block
 
 > Productivity and Automation Tools for Developers
 
-This repository contains the source code for the [Lula.ai](https://lula.ai) website, showcasing productivity and automation tools.
+This repository contains the source code for the [The Coral Block](https://thecoralblock.com) website, showcasing productivity and automation tools.
 
 ## Overview
 
-Lula.ai provides developer tools that leverage AI to automate repetitive tasks, organize information, and provide intelligent insights. Our first product is **SaveMyAttachments**, a Google Workspace Add-on for intelligent email processing.
+The Coral Block provides developer tools that leverage AI to automate repetitive tasks, organize information, and provide intelligent insights. Our first product is **SaveMyAttachments**, a Google Workspace Add-on for intelligent email processing.
 
 ## Repository Structure
 
 ```
-Lula.ai/
+The Coral Block/
 ├── content/               # Obsidian vault with markdown content
 │   ├── docs/             # Documentation pages (Privacy, Terms, etc.)
 │   └── products/         # Product pages
@@ -118,11 +118,11 @@ The following are excluded from version control (see `.gitignore`):
 
 ## Contributing
 
-This repository is maintained by the Lula.ai team. For questions or support, contact support@lula.ai.
+This repository is maintained by the The Coral Block team. For questions or support, contact support@thecoralblock.com.
 
 ## License
 
-© 2025 Lula.ai. All rights reserved.
+© 2025 The Coral Block. All rights reserved.
 
 ## Products
 
@@ -136,9 +136,9 @@ A Google Workspace Add-on that automatically processes Gmail emails, saves attac
 
 ## Contact
 
-- **Email**: support@lula.ai
-- **Website**: https://lula.ai
-- **Support**: https://lula.ai/support.html
+- **Email**: support@thecoralblock.com
+- **Website**: https://thecoralblock.com
+- **Support**: https://thecoralblock.com/support.html
 
 ---
 

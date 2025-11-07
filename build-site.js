@@ -15,7 +15,7 @@ const docsDir = path.join(contentDir, 'docs');
 const productsDir = path.join(contentDir, 'products');
 
 async function buildSite() {
-    console.log('📦 Building Lula.ai site...');
+    console.log('📦 Building The Coral Block site...');
 
     // Create public directory
     await fs.mkdir(publicDir, { recursive: true });
@@ -69,7 +69,7 @@ async function buildSite() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Lula.ai</title>
+    <title>404 - The Coral Block</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -92,7 +92,7 @@ async function buildSite() {
     <div>
         <h1>404 - Page Not Found</h1>
         <p>The page you're looking for doesn't exist.</p>
-        <a href="/">← Return to Lula.ai</a>
+        <a href="/">← Return to The Coral Block</a>
     </div>
 </body>
 </html>`;
@@ -140,14 +140,14 @@ function generatePage({ title, description, content, category }) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title} - Lula.ai</title>
+    <title>${title} - The Coral Block</title>
     <meta name="description" content="${description}">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">Lula.ai</a>
+            <a href="/" class="logo">The Coral Block</a>
             <div class="nav-links">
                 <a href="/products.html">Products</a>
                 <a href="/docs.html">Docs</a>
@@ -161,7 +161,7 @@ function generatePage({ title, description, content, category }) {
     </main>
 
     <footer>
-        <p>&copy; ${new Date().getFullYear()} Lula.ai - Productivity and Automation Tools</p>
+        <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
         <div class="footer-links">
             <a href="/docs/privacy-policy.html">Privacy Policy</a>
             <a href="/docs/terms-of-service.html">Terms of Service</a>
