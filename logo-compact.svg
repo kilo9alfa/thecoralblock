@@ -1,0 +1,47 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="t1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d6d7a"/>
+      <stop offset="100%" style="stop-color:#2d5263"/>
+    </linearGradient>
+    <linearGradient id="t2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#244855"/>
+      <stop offset="100%" style="stop-color:#1a2f38"/>
+    </linearGradient>
+    <linearGradient id="t3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d5263"/>
+      <stop offset="100%" style="stop-color:#244855"/>
+    </linearGradient>
+    <linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9d92"/>
+      <stop offset="100%" style="stop-color:#ff8577"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F61"/>
+      <stop offset="100%" style="stop-color:#ff5a4f"/>
+    </linearGradient>
+    <linearGradient id="c3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8577"/>
+      <stop offset="100%" style="stop-color:#FF6F61"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Block -->
+  <g>
+    <path d="M 5 25 L 20 17 L 35 25 L 20 33 Z" fill="url(#t1)" stroke="#5a8793" stroke-width="0.8"/>
+    <path d="M 5 25 L 5 40 L 20 48 L 20 33 Z" fill="url(#t2)" stroke="#5a8793" stroke-width="0.8"/>
+    <path d="M 20 33 L 20 48 L 35 40 L 35 25 Z" fill="url(#t3)" stroke="#5a8793" stroke-width="0.8"/>
+  </g>
+
+  <!-- Chain -->
+  <path d="M 35 29 Q 42 28 49 29" fill="none" stroke="#5a8793" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="53" cy="29" rx="4" ry="5" fill="none" stroke="#5a8793" stroke-width="1.5" transform="rotate(-10 53 29)"/>
+  <path d="M 57 29 Q 64 28 71 29" fill="none" stroke="#5a8793" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Right Block (Coral) -->
+  <g>
+    <path d="M 71 22 L 86 14 L 101 22 L 86 30 Z" fill="url(#c1)" stroke="#ff8577" stroke-width="0.8"/>
+    <path d="M 71 22 L 71 37 L 86 45 L 86 30 Z" fill="url(#c2)" stroke="#ff8577" stroke-width="0.8"/>
+    <path d="M 86 30 L 86 45 L 101 37 L 101 22 Z" fill="url(#c3)" stroke="#ff8577" stroke-width="0.8"/>
+  </g>
+</svg>

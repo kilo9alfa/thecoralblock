@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coral Block - Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1a2f38 0%, #244855 100%);
+            color: #e8f4f8;
+            padding: 3rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #FF6F61;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo-card {
+            background: rgba(36, 72, 85, 0.6);
+            border: 2px solid #2d5263;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo-card h2 {
+            color: #b0d4e1;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .logo-preview {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-preview.dark {
+            background: #0a1419;
+        }
+
+        .logo-preview img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo-info {
+            color: #7a9fad;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .color-swatch {
+            background: rgba(36, 72, 85, 0.6);
+            border: 2px solid #2d5263;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .color-box {
+            width: 100%;
+            height: 60px;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .color-name {
+            font-weight: 600;
+            color: #b0d4e1;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-code {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #7a9fad;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-teal {
+            background: #244855;
+            color: #b0d4e1;
+            border: 2px solid #2d5263;
+        }
+
+        .btn-teal:hover {
+            background: #2d5263;
+            color: #e8f4f8;
+        }
+
+        .btn-coral {
+            background: #FF6F61;
+            color: white;
+            border: 2px solid #ff5a4f;
+        }
+
+        .btn-coral:hover {
+            background: #ff5a4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Coral Block - Logo Variations</h1>
+
+        <div class="logo-grid">
+            <div class="logo-card">
+                <h2>Simple Logo</h2>
+                <div class="logo-preview">
+                    <img src="logo.svg" alt="The Coral Block Logo">
+                </div>
+                <div class="logo-preview dark">
+                    <img src="logo.svg" alt="The Coral Block Logo">
+                </div>
+                <div class="logo-info">
+                    Basic blockchain fork design<br>
+                    120 × 160 px
+                </div>
+                <div class="buttons">
+                    <a href="logo.svg" download class="btn btn-teal">Download SVG</a>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h2>Detailed Logo</h2>
+                <div class="logo-preview">
+                    <img src="logo-detailed.svg" alt="The Coral Block Logo Detailed">
+                </div>
+                <div class="logo-preview dark">
+                    <img src="logo-detailed.svg" alt="The Coral Block Logo Detailed">
+                </div>
+                <div class="logo-info">
+                    Enhanced with gradients & details<br>
+                    140 × 180 px
+                </div>
+                <div class="buttons">
+                    <a href="logo-detailed.svg" download class="btn btn-teal">Download SVG</a>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h2>Icon/Favicon</h2>
+                <div class="logo-preview">
+                    <img src="logo-icon.svg" alt="The Coral Block Icon" style="width: 128px;">
+                </div>
+                <div class="logo-preview dark">
+                    <img src="logo-icon.svg" alt="The Coral Block Icon" style="width: 128px;">
+                </div>
+                <div class="logo-info">
+                    Compact for favicons & small displays<br>
+                    64 × 64 px
+                </div>
+                <div class="buttons">
+                    <a href="logo-icon.svg" download class="btn btn-teal">Download SVG</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Color Palette</h1>
+        <div class="color-palette">
+            <div class="color-swatch">
+                <div class="color-box" style="background: #FF6F61;"></div>
+                <div class="color-name">Living Coral</div>
+                <div class="color-code">PANTONE 16-1546<br>#FF6F61</div>
+            </div>
+
+            <div class="color-swatch">
+                <div class="color-box" style="background: #1a2f38;"></div>
+                <div class="color-name">Deep Teal (Dark)</div>
+                <div class="color-code">PANTONE 19-4914<br>#1a2f38</div>
+            </div>
+
+            <div class="color-swatch">
+                <div class="color-box" style="background: #244855;"></div>
+                <div class="color-name">Mid Teal</div>
+                <div class="color-code">#244855</div>
+            </div>
+
+            <div class="color-swatch">
+                <div class="color-box" style="background: #2d5263;"></div>
+                <div class="color-name">Light Teal</div>
+                <div class="color-code">#2d5263</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

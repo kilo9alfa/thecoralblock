@@ -1,0 +1,58 @@
+<svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for 3D effect with deep teal -->
+    <linearGradient id="tealTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d6d7a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5263;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#244855;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f38;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d5263;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#244855;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="coralTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9d92;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8577;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coralSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F61;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5a4f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coralFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8577;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6F61;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Teal Block -->
+  <g>
+    <path d="M 8 35 L 28 25 L 48 35 L 28 45 Z" fill="url(#tealTop)" stroke="#5a8793" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M 8 35 L 8 55 L 28 65 L 28 45 Z" fill="url(#tealSide)" stroke="#5a8793" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M 28 45 L 28 65 L 48 55 L 48 35 Z" fill="url(#tealFront)" stroke="#5a8793" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Chain link -->
+  <g>
+    <path d="M 48 42 Q 58 40 68 42" fill="none" stroke="#5a8793" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="73" cy="42" rx="5" ry="7" fill="none" stroke="#5a8793" stroke-width="2" transform="rotate(-10 73 42)"/>
+    <path d="M 78 42 Q 88 40 98 42" fill="none" stroke="#5a8793" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Coral Block -->
+  <g>
+    <path d="M 98 30 L 118 20 L 138 30 L 118 40 Z" fill="url(#coralTop)" stroke="#ff8577" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M 98 30 L 98 50 L 118 60 L 118 40 Z" fill="url(#coralSide)" stroke="#ff8577" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M 118 40 L 118 60 L 138 50 L 138 30 Z" fill="url(#coralFront)" stroke="#ff8577" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Small connecting block -->
+  <g opacity="0.7">
+    <path d="M 53 52 L 68 44 L 83 52 L 68 60 Z" fill="url(#tealTop)" stroke="#5a8793" stroke-width="0.8" stroke-linejoin="round"/>
+    <path d="M 53 52 L 53 65 L 68 73 L 68 60 Z" fill="url(#tealSide)" stroke="#5a8793" stroke-width="0.8" stroke-linejoin="round"/>
+    <path d="M 68 60 L 68 73 L 83 65 L 83 52 Z" fill="url(#tealFront)" stroke="#5a8793" stroke-width="0.8" stroke-linejoin="round"/>
+  </g>
+</svg>

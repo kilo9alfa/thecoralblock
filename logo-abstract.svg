@@ -1,0 +1,74 @@
+<svg width="200" height="140" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for 3D effect -->
+    <linearGradient id="tealTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d6d7a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5263;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#244855;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f38;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d5263;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#244855;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="coralTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9d92;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8577;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coralSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F61;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5a4f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coralFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8577;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6F61;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Teal Block (isometric) -->
+  <g>
+    <!-- Top face -->
+    <path d="M 30 60 L 60 45 L 90 60 L 60 75 Z" fill="url(#tealTop)" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 30 60 L 30 90 L 60 105 L 60 75 Z" fill="url(#tealSide)" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 60 75 L 60 105 L 90 90 L 90 60 Z" fill="url(#tealFront)" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Chain link from left block -->
+  <g>
+    <path d="M 90 75 Q 105 72 120 75" fill="none" stroke="#5a8793" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 120 70 Q 130 68 135 72 Q 138 78 135 84 Q 130 88 120 86" fill="none" stroke="#5a8793" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 120 86 Q 132 84 145 82" fill="none" stroke="#5a8793" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Coral Block (isometric) -->
+  <g>
+    <!-- Top face -->
+    <path d="M 145 45 L 175 30 L 205 45 L 175 60 Z" fill="url(#coralTop)" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 145 45 L 145 75 L 175 90 L 175 60 Z" fill="url(#coralSide)" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 175 60 L 175 90 L 205 75 L 205 45 Z" fill="url(#coralFront)" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Another chain segment below -->
+  <g>
+    <path d="M 60 105 Q 75 108 90 105" fill="none" stroke="#5a8793" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 90 100 Q 100 98 105 102 Q 108 108 105 114 Q 100 118 90 116" fill="none" stroke="#5a8793" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 90 116 Q 102 114 115 112" fill="none" stroke="#5a8793" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small connecting block below -->
+  <g opacity="0.8">
+    <!-- Top face -->
+    <path d="M 115 95 L 135 85 L 155 95 L 135 105 Z" fill="url(#tealTop)" stroke="#2d5263" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 115 95 L 115 115 L 135 125 L 135 105 Z" fill="url(#tealSide)" stroke="#2d5263" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 135 105 L 135 125 L 155 115 L 155 95 Z" fill="url(#tealFront)" stroke="#2d5263" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="120" height="160" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Block -->
+  <rect x="35" y="10" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
+  <line x1="60" y1="45" x2="60" y2="55" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Middle Block -->
+  <rect x="35" y="55" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Connection line down from middle -->
+  <line x1="60" y1="90" x2="60" y2="100" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Fork line to the side -->
+  <line x1="60" y1="72.5" x2="75" y2="72.5" stroke="#FF6F61" stroke-width="2"/>
+  <line x1="75" y1="72.5" x2="75" y2="100" stroke="#FF6F61" stroke-width="2"/>
+
+  <!-- Bottom Block (main chain) -->
+  <rect x="35" y="100" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Fourth Block (forked - Coral) -->
+  <rect x="75" y="100" width="35" height="35" rx="4" fill="#FF6F61" stroke="#ff5a4f" stroke-width="2"/>
+
+  <!-- Small connection indicators (dots) -->
+  <circle cx="60" cy="50" r="3" fill="#2d5263"/>
+  <circle cx="60" cy="95" r="3" fill="#2d5263"/>
+  <circle cx="60" cy="72.5" r="3" fill="#FF6F61"/>
+</svg>

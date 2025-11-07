@@ -1,0 +1,33 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5263;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f38;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coral" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8577;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6F61;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Block -->
+  <rect x="18" y="4" width="28" height="16" rx="3" fill="url(#teal)" stroke="#2d5263" stroke-width="1.5"/>
+
+  <!-- Connection -->
+  <line x1="32" y1="20" x2="32" y2="24" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Middle Block -->
+  <rect x="18" y="24" width="28" height="16" rx="3" fill="url(#teal)" stroke="#2d5263" stroke-width="1.5"/>
+
+  <!-- Main chain connection -->
+  <line x1="32" y1="40" x2="32" y2="44" stroke="#2d5263" stroke-width="2"/>
+
+  <!-- Fork connection -->
+  <path d="M 32 32 L 38 32 L 38 44" stroke="#FF6F61" stroke-width="2" fill="none"/>
+
+  <!-- Bottom Block (main chain) -->
+  <rect x="18" y="44" width="28" height="16" rx="3" fill="url(#teal)" stroke="#2d5263" stroke-width="1.5"/>
+
+  <!-- Fourth Block (forked - Coral) -->
+  <rect x="38" y="44" width="20" height="16" rx="3" fill="url(#coral)" stroke="#ff5a4f" stroke-width="1.5"/>
+</svg>

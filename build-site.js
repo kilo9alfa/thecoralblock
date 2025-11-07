@@ -24,7 +24,13 @@ async function buildSite() {
     const staticFiles = [
         'index.html',
         'styles.css',
-        'manifest.json'
+        'manifest.json',
+        'logo.svg',
+        'logo-detailed.svg',
+        'logo-icon.svg',
+        'logo-abstract.svg',
+        'logo-horizontal.svg',
+        'logo-compact.svg'
     ];
 
     for (const file of staticFiles) {
@@ -149,7 +155,10 @@ function generatePage({ title, description, content, category }) {
     <button class="theme-toggle" id="themeToggle">Dark Mode</button>
     <header class="site-header">
         <nav class="nav-container">
-            <a href="/" class="logo">The Coral Block</a>
+            <a href="/" class="logo">
+                <img src="/logo-compact.svg" alt="The Coral Block Logo" class="logo-image">
+                <span class="logo-text">The Coral Block</span>
+            </a>
             <div class="nav-links">
                 <a href="/#products">Products</a>
                 <a href="/#about">About</a>
