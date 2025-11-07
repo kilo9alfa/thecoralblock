@@ -133,71 +133,66 @@ Target: thecoralblock.pages.dev
 
 ---
 
-## Step 5: Configure DNS in Squarespace
+## Step 5: Custom Domain Setup
 
-### 5.1 Log in to Squarespace
+### 5.1 Current Approach
 
-Go to: https://account.squarespace.com/domains/managed/thecoralblock.com
+**Note:** For now, the website will be accessible at `thecoralblock.pages.dev`
 
-### 5.2 Access DNS Settings
+The domain `thecoralblock.com` will be **transferred from Squarespace to Cloudflare** in a later step for simplicity (everything in one place).
 
-1. Click **DNS Settings** or **Advanced DNS Settings**
-2. Look for **Custom Records** section
+### 5.2 Why Transfer to Cloudflare?
 
-### 5.3 Add Cloudflare CNAME Records
+- **Simpler management**: Website + DNS in one dashboard
+- **Automatic SSL**: Built-in certificate management
+- **Better integration**: Cloudflare Pages works best with Cloudflare-managed domains
+- **Free DNS**: No additional costs
+- **Easy email setup**: Add iCloud DNS records directly in Cloudflare
 
-**Important:** Squarespace may not allow CNAME on root (@). If so:
+### 5.3 Next Steps (After Transfer)
 
-**Option A: Use A Records (if Cloudflare provides them)**
-1. In Cloudflare, look for fallback A records (IP addresses)
-2. Add those to Squarespace
+Once domain is transferred to Cloudflare:
+1. DNS will be automatically managed by Cloudflare
+2. Add custom domain in Cloudflare Pages (automatic DNS setup)
+3. Add iCloud email DNS records in Cloudflare DNS
+4. Everything works seamlessly
 
-**Option B: Use www subdomain only**
-1. Add CNAME for `www` → `thecoralblock.pages.dev`
-2. Set up redirect from root to www in Squarespace
-
-### 5.4 Typical DNS Configuration
-
-```
-# For Website (Cloudflare Pages)
-Type: CNAME    Name: www    Value: thecoralblock.pages.dev
-Type: A        Name: @      Value: [Cloudflare IP - see Pages dashboard]
-
-# For Email (iCloud - will add later)
-# (iCloud DNS records will be added in next step)
-```
-
-### 5.5 Save Changes
-
-Click **Save** or **Apply Changes** in Squarespace
-
-**DNS Propagation:** Can take up to 24 hours (usually 1-2 hours)
+**For now:** Continue with `thecoralblock.pages.dev` URL
 
 ---
 
-## Step 6: Verify Custom Domain
+## Step 6: Verify Deployment
 
-### 6.1 Check DNS Propagation
+### 6.1 Test the Pages URL
 
-Use a DNS checker tool:
-- https://dnschecker.org
-- Enter: `thecoralblock.com`
-- Check CNAME records globally
+Your website is now live at:
+```
+https://thecoralblock.pages.dev
+```
 
-### 6.2 Wait for SSL Certificate
+### 6.2 Verify All Pages Work
 
-Cloudflare automatically provisions SSL certificate for:
-- `thecoralblock.com`
-- `www.thecoralblock.com`
+Test these URLs:
+- https://thecoralblock.pages.dev (homepage)
+- https://thecoralblock.pages.dev/docs/privacy-policy.html
+- https://thecoralblock.pages.dev/docs/terms-of-service.html
+- https://thecoralblock.pages.dev/products/savemyattachments.html
+- https://thecoralblock.pages.dev/support.html
 
-**Time:** Usually 5-15 minutes after DNS propagates
+### 6.3 Check SSL Certificate
 
-### 6.3 Test HTTPS
+All `.pages.dev` domains automatically have SSL:
+- ✅ HTTPS enabled
+- ✅ Secure connection
+- ✅ Valid certificate
 
-Once SSL is ready:
-1. Visit: https://thecoralblock.com
-2. Verify: 🔒 Secure connection
-3. Test all pages
+### 6.4 Custom Domain (Later)
+
+Once you transfer `thecoralblock.com` to Cloudflare:
+1. Add custom domain in Cloudflare Pages
+2. Cloudflare automatically configures DNS
+3. SSL certificate provisioned automatically
+4. Site accessible at `https://thecoralblock.com`
 
 ---
 
