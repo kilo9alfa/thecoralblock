@@ -1,0 +1,39 @@
+<svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Coral block gradient -->
+    <linearGradient id="coralFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8577;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6F61;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Block (Teal outline only) -->
+  <g>
+    <!-- Top face -->
+    <path d="M 10 45 L 30 35 L 50 45 L 30 55 Z" fill="none" stroke="#2d5263" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 10 45 L 10 65 L 30 75 L 30 55 Z" fill="none" stroke="#2d5263" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 30 55 L 30 75 L 50 65 L 50 45 Z" fill="none" stroke="#2d5263" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Chain links -->
+  <g>
+    <!-- First link -->
+    <ellipse cx="58" cy="50" rx="6" ry="9" fill="none" stroke="#5a8793" stroke-width="2.5" transform="rotate(20 58 50)"/>
+    <!-- Connection curve -->
+    <path d="M 64 48 Q 72 46 78 48" fill="none" stroke="#5a8793" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Second link -->
+    <ellipse cx="86" cy="50" rx="6" ry="9" fill="none" stroke="#5a8793" stroke-width="2.5" transform="rotate(-20 86 50)"/>
+  </g>
+
+  <!-- Right Block (Coral filled) -->
+  <g>
+    <!-- Top face -->
+    <path d="M 90 35 L 110 25 L 130 35 L 110 45 Z" fill="url(#coralFill)" stroke="#ff5a4f" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Left face -->
+    <path d="M 90 35 L 90 55 L 110 65 L 110 45 Z" fill="#FF6F61" stroke="#ff5a4f" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Right face -->
+    <path d="M 110 45 L 110 65 L 130 55 L 130 35 Z" fill="#ff8577" stroke="#ff5a4f" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+</svg>

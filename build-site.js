@@ -26,6 +26,7 @@ async function buildSite() {
         'styles.css',
         'manifest.json',
         'logo.svg',
+        'logo-final.svg',
         'logo-detailed.svg',
         'logo-icon.svg',
         'logo-abstract.svg',
@@ -156,7 +157,7 @@ function generatePage({ title, description, content, category }) {
     <header class="site-header">
         <nav class="nav-container">
             <a href="/" class="logo">
-                <img src="/logo-compact.svg" alt="The Coral Block Logo" class="logo-image">
+                <img src="/logo.svg" alt="The Coral Block Logo" class="logo-image">
                 <span class="logo-text">The Coral Block</span>
             </a>
             <div class="nav-links">

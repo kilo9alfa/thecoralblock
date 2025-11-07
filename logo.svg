@@ -1,26 +1,29 @@
-<svg width="120" height="160" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
-  <!-- Top Block -->
-  <rect x="35" y="10" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
-  <line x1="60" y1="45" x2="60" y2="55" stroke="#2d5263" stroke-width="2"/>
+<svg width="100" height="65" viewBox="0 0 100 65" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8577"/>
+      <stop offset="100%" style="stop-color:#FF6F61"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Middle Block -->
-  <rect x="35" y="55" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
+  <!-- Left Block (Teal outline) -->
+  <g>
+    <path d="M 5 30 L 20 22 L 35 30 L 20 38 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 5 30 L 5 45 L 20 53 L 20 38 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 20 38 L 20 53 L 35 45 L 35 30 Z" fill="none" stroke="#2d5263" stroke-width="2" stroke-linejoin="round"/>
+  </g>
 
-  <!-- Connection line down from middle -->
-  <line x1="60" y1="90" x2="60" y2="100" stroke="#2d5263" stroke-width="2"/>
+  <!-- Chain links -->
+  <g>
+    <ellipse cx="42" cy="34" rx="4.5" ry="6.5" fill="none" stroke="#5a8793" stroke-width="2" transform="rotate(20 42 34)"/>
+    <path d="M 46 32 Q 52 31 56 32" fill="none" stroke="#5a8793" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="62" cy="34" rx="4.5" ry="6.5" fill="none" stroke="#5a8793" stroke-width="2" transform="rotate(-20 62 34)"/>
+  </g>
 
-  <!-- Fork line to the side -->
-  <line x1="60" y1="72.5" x2="75" y2="72.5" stroke="#FF6F61" stroke-width="2"/>
-  <line x1="75" y1="72.5" x2="75" y2="100" stroke="#FF6F61" stroke-width="2"/>
-
-  <!-- Bottom Block (main chain) -->
-  <rect x="35" y="100" width="50" height="35" rx="4" fill="#244855" stroke="#2d5263" stroke-width="2"/>
-
-  <!-- Fourth Block (forked - Coral) -->
-  <rect x="75" y="100" width="35" height="35" rx="4" fill="#FF6F61" stroke="#ff5a4f" stroke-width="2"/>
-
-  <!-- Small connection indicators (dots) -->
-  <circle cx="60" cy="50" r="3" fill="#2d5263"/>
-  <circle cx="60" cy="95" r="3" fill="#2d5263"/>
-  <circle cx="60" cy="72.5" r="3" fill="#FF6F61"/>
+  <!-- Right Block (Coral filled) -->
+  <g>
+    <path d="M 65 25 L 80 17 L 95 25 L 80 33 Z" fill="url(#coral)" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 65 25 L 65 40 L 80 48 L 80 33 Z" fill="#FF6F61" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 80 33 L 80 48 L 95 40 L 95 25 Z" fill="#ff8577" stroke="#ff5a4f" stroke-width="2" stroke-linejoin="round"/>
+  </g>
 </svg>
