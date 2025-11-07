@@ -8,6 +8,8 @@ This guide walks you through deploying The Coral Block website to Cloudflare Pag
 ✅ Code pushed to `main` branch
 ✅ Cloudflare account (free tier is sufficient)
 
+**Note:** Login to Cloudflare using your Apple account
+
 ---
 
 ## Step 1: Connect GitHub to Cloudflare Pages
@@ -15,6 +17,8 @@ This guide walks you through deploying The Coral Block website to Cloudflare Pag
 ### 1.1 Log in to Cloudflare
 
 Go to: https://dash.cloudflare.com
+
+**Login:** Use your Apple account (Sign in with Apple)
 
 ### 1.2 Navigate to Pages
 
