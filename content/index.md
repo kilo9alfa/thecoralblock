@@ -5,17 +5,17 @@ hero:
   headline: Productivity & Automation Tools
   tagline: Build smarter workflows with AI-powered developer tools
 products:
-  - name: SaveMyAttachments
-    description: Automatically process Gmail emails, save attachments to Google Drive, and create organized summaries with AI-powered intelligence.
+  - name: Save My Attachments
+    description: Save My Attachments is a Google Workspace Add-on designed to automate the processing of your Gmail emails. It seamlessly saves attachments to Google Drive, logs key email data in Google Sheets, and generates AI-powered summaries of incoming messages. This enables you to maintain a comprehensive spreadsheet of all relevant emails and attachments, properly classified for easy access, and readily shareable with your teammates and collaborators.
     features:
       - icon: 📧
-        text: Smart Email Processing
+        text: Smart Email Attachment Processing
       - icon: 🤖
-        text: AI Summaries
+        text: AI Summaries for your emails
       - icon: 📊
         text: Google Sheets Integration
       - icon: 📁
-        text: Organized Storage
+        text: Organized Storage of all your attachments
     links:
       - text: Learn More
         url: /products/savemyattachments.html
