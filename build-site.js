@@ -20,9 +20,8 @@ async function buildSite() {
     // Create public directory
     await fs.mkdir(publicDir, { recursive: true });
 
-    // Copy static HTML files if they exist
+    // Copy static files if they exist
     const staticFiles = [
-        'index.html',
         'styles.css',
         'manifest.json',
         'logo.png',
@@ -32,7 +31,8 @@ async function buildSite() {
         'logo-icon.svg',
         'logo-abstract.svg',
         'logo-horizontal.svg',
-        'logo-compact.svg'
+        'logo-compact.svg',
+        'support.html'
     ];
 
     for (const file of staticFiles) {
@@ -45,6 +45,14 @@ async function buildSite() {
         } catch (error) {
             // File doesn't exist, skip silently
         }
+    }
+
+    // Process homepage from content/index.md if it exists
+    try {
+        const homepagePath = path.join(contentDir, 'index.md');
+        await processHomepage(homepagePath);
+    } catch (error) {
+        console.log('⚠️  No index.md found, skipping homepage generation');
     }
 
     // Process markdown files from content/docs
@@ -112,6 +120,21 @@ async function buildSite() {
     console.log(`📁 Output directory: ${publicDir}`);
 }
 
+async function processHomepage(filePath) {
+    const content = await fs.readFile(filePath, 'utf-8');
+    const { data: frontmatter, content: markdown } = matter(content);
+
+    // Convert markdown to HTML for about section
+    const aboutContent = marked(markdown);
+
+    // Generate homepage HTML
+    const html = generateHomepage(frontmatter, aboutContent);
+
+    const outputPath = path.join(publicDir, 'index.html');
+    await fs.writeFile(outputPath, html);
+    console.log('✅ Generated index.html from content/index.md');
+}
+
 async function processMarkdownFile(filePath, category) {
     const content = await fs.readFile(filePath, 'utf-8');
     const { data: frontmatter, content: markdown } = matter(content);
@@ -140,6 +163,136 @@ async function processMarkdownFile(filePath, category) {
 
     await fs.writeFile(outputPath, html);
     console.log(`✅ Generated ${category}/${fileName}.html`);
+}
+
+function generateHomepage(frontmatter, aboutContent) {
+    const { title, description, hero, products = [] } = frontmatter;
+
+    // Generate product cards HTML
+    const productCardsHtml = products.map(product => {
+        const featuresHtml = product.features?.map(f =>
+            `<div class="feature">
+                <span class="feature-icon">${f.icon}</span>
+                <span>${f.text}</span>
+            </div>`
+        ).join('\n                        ') || '';
+
+        const linksHtml = product.links?.map(link => {
+            const target = link.target ? `target="${link.target}"` : '';
+            return `<a href="${link.url}" class="btn ${link.class}" ${target}>${link.text}</a>`;
+        }).join('\n                        ') || '';
+
+        return `<div class="product-card">
+                    <h3>${product.name}</h3>
+                    <p class="product-description">
+                        ${product.description}
+                    </p>
+                    <div class="product-features">
+                        ${featuresHtml}
+                    </div>
+                    <div class="product-links">
+                        ${linksHtml}
+                    </div>
+                </div>`;
+    }).join('\n\n                ');
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${title}</title>
+    <meta name="description" content="${description}">
+    <meta name="theme-color" content="#f8f8f6">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="The Coral Block Logo" class="logo-image">
+                <span class="logo-text">The Coral Block</span>
+            </a>
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="/support.html">Support</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>${hero.headline}</h1>
+                <p class="tagline">${hero.tagline}</p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Our Products</h2>
+
+                ${productCardsHtml}
+
+                <!-- Placeholder for future products -->
+                <div class="coming-soon">
+                    <p>More tools coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                ${aboutContent}
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
+            <div class="footer-links">
+                <a href="/docs/privacy-policy.html">Privacy Policy</a>
+                <a href="/docs/terms-of-service.html">Terms of Service</a>
+                <a href="/support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme management
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkTheme = localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme'); // Default to dark
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1a2f38');
+            } else {
+                document.body.classList.remove('dark-theme');
+                themeToggle.textContent = 'Dark Mode';
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8f8f6');
+            }
+        }
+
+        // Apply theme on page load
+        applyTheme(isDarkTheme);
+
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            isDarkTheme = !isDarkTheme;
+            applyTheme(isDarkTheme);
+            localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>`;
 }
 
 function generatePage({ title, description, content, category }) {
