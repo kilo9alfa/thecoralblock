@@ -234,8 +234,7 @@ You may not assign or transfer these Terms or your account without our written c
 ### 13.6 Contact
 
 For questions about these Terms, contact us at:
-- **Email:** legal@thecoralblock.com
-- **Support:** support@thecoralblock.com
+- **Email:** support@thecoralblock.com
 
 ## 14. Google Workspace Marketplace
 

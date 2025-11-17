@@ -97,7 +97,7 @@ You have the right to:
 - **Opt-Out**: Unsubscribe from marketing communications
 - **Data Portability**: Export your data in commonly used formats
 
-To exercise these rights, contact us at: privacy@thecoralblock.com
+To exercise these rights, contact us at: support@thecoralblock.com
 
 ## Children's Privacy
 
@@ -137,8 +137,7 @@ We do not sell personal information.
 
 For privacy-related questions or concerns:
 
-**Email:** privacy@thecoralblock.com
-**Support:** support@thecoralblock.com
+**Email:** support@thecoralblock.com
 
 ---
 
