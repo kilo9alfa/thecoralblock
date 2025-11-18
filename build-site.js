@@ -170,6 +170,8 @@ function generateHomepage(frontmatter, aboutContent) {
 
     // Generate product cards HTML
     const productCardsHtml = products.map(product => {
+        const statusBadge = product.status ? `<span class="status-badge">${product.status}</span>` : '';
+
         const featuresHtml = product.features?.map(f =>
             `<div class="feature">
                 <span class="feature-icon">${f.icon}</span>
@@ -183,7 +185,7 @@ function generateHomepage(frontmatter, aboutContent) {
         }).join('\n                        ') || '';
 
         return `<div class="product-card">
-                    <h3>${product.name}</h3>
+                    <h3>${product.name} ${statusBadge}</h3>
                     <p class="product-description">
                         ${product.description}
                     </p>

@@ -191,6 +191,26 @@ body.dark-theme .product-card:hover {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.status-badge {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.dark-theme .status-badge {
+    background-color: var(--accent-color);
+    color: #1a2f38;
 }
 
 .product-description {
