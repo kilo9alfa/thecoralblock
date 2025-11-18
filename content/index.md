@@ -38,7 +38,7 @@ products:
         text: Smart Contact Database
     links:
       - text: Join Waitlist
-        url: "#waitlist"
+        url: "mailto:support@thecoralblock.com?subject=Join%20Waitlist%20-%20Save%20My%20Contacts&body=I%20want%20to%20join%20the%20waitlist%20for%20Save%20My%20Contacts"
         class: btn-secondary
   - name: Save My Blood Pressure
     description: Keep your health data organized and accessible with Save My Blood Pressure. This tool automatically captures readings from your blood pressure monitor and logs them into a structured Google Sheets spreadsheet. Track trends over time, monitor your cardiovascular health, and easily share your records with healthcare providers. Your health data stays private and under your control.
@@ -54,7 +54,7 @@ products:
         text: Privacy-First Data Storage
     links:
       - text: Join Waitlist
-        url: "#waitlist"
+        url: "mailto:support@thecoralblock.com?subject=Join%20Waitlist%20-%20Save%20My%20Blood%20Pressure&body=I%20want%20to%20join%20the%20waitlist%20for%20Save%20My%20Blood%20Pressure"
         class: btn-secondary
   - name: Save My Bookmarks
     description: Elevate your research workflow with Save My Bookmarks. More than just a bookmark manager, this tool captures web pages, ideas, locations, and concepts, then automatically generates comprehensive research articles using multiple AI assistants. Configure custom prompts for different research topics and let AI synthesize information from your saved bookmarks into well-structured, insightful reports—perfect for researchers, writers, and knowledge workers.
@@ -70,7 +70,7 @@ products:
         text: Automated Knowledge Synthesis
     links:
       - text: Join Waitlist
-        url: "#waitlist"
+        url: "mailto:support@thecoralblock.com?subject=Join%20Waitlist%20-%20Save%20My%20Bookmarks&body=I%20want%20to%20join%20the%20waitlist%20for%20Save%20My%20Bookmarks"
         class: btn-secondary
 ---
 
