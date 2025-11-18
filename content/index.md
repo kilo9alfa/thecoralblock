@@ -74,7 +74,7 @@ products:
         class: btn-secondary
 ---
 
-# About The Coral Block
+## About The Coral Block
 
 We build productivity and automation tools that help developers and teams work smarter. Our solutions leverage AI to automate repetitive tasks, organize information, and provide intelligent insights.
 
