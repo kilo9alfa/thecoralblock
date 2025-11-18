@@ -236,8 +236,6 @@ function generateHomepage(frontmatter, aboutContent) {
         <!-- Products Section -->
         <section id="products" class="products-section">
             <div class="container">
-                <h2>Our Products</h2>
-
                 ${productCardsHtml}
 
                 <!-- Placeholder for future products -->
