@@ -33,7 +33,8 @@ async function buildSite() {
         'logo-horizontal.svg',
         'logo-compact.svg',
         'support.html',
-        'privacy.html'
+        'privacy.html',
+        'terms.html'
     ];
 
     for (const file of staticFiles) {
@@ -259,8 +260,8 @@ function generateHomepage(frontmatter, aboutContent) {
         <div class="container">
             <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
             <div class="footer-links">
-                <a href="/docs/privacy-policy.html">Privacy Policy</a>
-                <a href="/docs/terms-of-service.html">Terms of Service</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
                 <a href="/support.html">Support</a>
             </div>
         </div>
@@ -333,8 +334,8 @@ function generatePage({ title, description, content, category }) {
         <div class="container">
             <p>&copy; ${new Date().getFullYear()} The Coral Block - Productivity and Automation Tools</p>
             <div class="footer-links">
-                <a href="/docs/privacy-policy.html">Privacy Policy</a>
-                <a href="/docs/terms-of-service.html">Terms of Service</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
                 <a href="/support.html">Support</a>
             </div>
         </div>
