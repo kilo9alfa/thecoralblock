@@ -27,12 +27,29 @@
 
     <main class="content">
         <h1>Privacy Policy</h1>
-<p><strong>Last Updated:</strong> November 6, 2025</p>
+<p><strong>Last Updated:</strong> November 21, 2025</p>
 <h2>Introduction</h2>
 <p>The Coral Block (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our products and services.</p>
+<h2>Google API Services User Data Policy Compliance</h2>
+<p>SaveMyAttachments&#39;s use and transfer of information received from Google APIs adheres to <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>We use Google API services to:</p>
+<ul>
+<li><strong>Gmail API</strong>: Read email messages and metadata, apply organizational labels</li>
+<li><strong>Google Drive API</strong>: Save email files and attachments to your Drive</li>
+<li><strong>Google Sheets API</strong>: Create searchable indexes of processed emails</li>
+</ul>
+<p>All data access is performed solely to provide the functionality you&#39;ve requested. We do not use Google API data for any other purpose.</p>
 <h2>Information We Collect</h2>
 <h3>SaveMyAttachments</h3>
-<p>When you use SaveMyAttachments, we may access:</p>
+<p>When you use SaveMyAttachments, we request the following Google permissions:</p>
+<ul>
+<li><strong>gmail.readonly</strong>: Read email messages and attachments to back them up</li>
+<li><strong>gmail.modify</strong>: Apply labels to mark processed emails (prevents duplicate processing)</li>
+<li><strong>drive</strong>: Save email files and attachments to your Google Drive</li>
+<li><strong>spreadsheets</strong>: Write email metadata to Google Sheets for searchable indexing</li>
+<li><strong>external_request</strong>: Connect to OpenRouter.ai (only if you opt-in to AI features)</li>
+</ul>
+<p>Data we access:</p>
 <ul>
 <li><strong>Email Content</strong>: Your Gmail emails are processed locally within your Google account. We do not store or access your email content on our servers.</li>
 <li><strong>Email Metadata</strong>: Information such as sender, date, subject lines, and attachment names may be processed to organize your data in Google Sheets.</li>
@@ -73,27 +90,31 @@
 <li>API keys stored in encrypted Google PropertiesService</li>
 </ul>
 <h2>Third-Party Services</h2>
-<h3>OpenRouter.ai</h3>
-<p>SaveMyAttachments uses OpenRouter for AI processing. When you use AI features:</p>
+<h3>OpenRouter.ai (Optional AI Features)</h3>
+<p>When you <strong>opt-in</strong> to AI summarization features:</p>
 <ul>
-<li>Email content is sent directly to OpenRouter using your personal API key</li>
-<li>OpenRouter&#39;s privacy policy applies to this data: <a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a></li>
-<li>You control which AI model processes your data</li>
-<li>No email content is stored on our servers during this process</li>
+<li>Email content is sent directly from your browser session to OpenRouter.ai using <strong>your personal API key</strong></li>
+<li>We act only as a conduit - the data flows directly from your environment to OpenRouter</li>
+<li><strong>You control</strong>: Which emails are processed, which AI model is used, when AI is enabled/disabled</li>
+<li>OpenRouter&#39;s data usage is governed by their privacy policy: <a href="https://openrouter.ai/privacy" target="_blank">https://openrouter.ai/privacy</a></li>
+<li><strong>Costs</strong>: Borne by you through your OpenRouter account (transparent pricing)</li>
+<li><strong>No AI processing occurs unless you explicitly enable it and provide your own API key</strong></li>
 </ul>
 <h3>Google Workspace</h3>
 <p>Our products integrate with Google Workspace services:</p>
 <ul>
-<li>Gmail API (read emails)</li>
+<li>Gmail API (read emails, apply labels)</li>
 <li>Google Drive API (save files)</li>
 <li>Google Sheets API (log data)</li>
 </ul>
-<p>Google&#39;s Privacy Policy applies to these services: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p>Google&#39;s Privacy Policy applies to these services: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 <h2>Data Retention</h2>
 <ul>
-<li><strong>Processing Logs</strong>: Minimal logs retained for 30 days for debugging purposes</li>
-<li><strong>User Accounts</strong>: Account information retained while you use our services</li>
-<li><strong>Email Tracking</strong>: Email IDs tracked locally in your Google environment to prevent duplicate processing</li>
+<li><strong>Email Message IDs</strong>: Stored locally in your Google account (PropertiesService) for 7 days to prevent duplicate processing. Automatically cleaned up when storage limit is reached.</li>
+<li><strong>Email Content</strong>: Never stored by us. Processed in real-time and discarded immediately after processing.</li>
+<li><strong>Processing Logs</strong>: Minimal execution logs retained for 30 days for debugging purposes only.</li>
+<li><strong>Configuration Settings</strong>: Retained while you actively use the service.</li>
+<li><strong>Upon Uninstallation</strong>: All configuration data is automatically deleted from your Google account. Email and attachment files remain in your Drive/Gmail (your data, your control).</li>
 </ul>
 <h2>Your Rights</h2>
 <p>You have the right to:</p>
@@ -102,9 +123,37 @@
 <li><strong>Deletion</strong>: Request deletion of your account and associated data</li>
 <li><strong>Correction</strong>: Update or correct your information</li>
 <li><strong>Opt-Out</strong>: Unsubscribe from marketing communications</li>
-<li><strong>Data Portability</strong>: Export your data in commonly used formats</li>
+<li><strong>Data Portability</strong>: Export your data in commonly used formats (all data already exists in your Google account in standard formats)</li>
+<li><strong>Revoke Access</strong>: You can revoke SaveMyAttachments&#39; access to your Google account at any time through your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions settings</a></li>
 </ul>
 <p>To exercise these rights, contact us at: <a href="mailto:support@thecoralblock.com">support@thecoralblock.com</a></p>
+<h2>How We Do NOT Use Your Data</h2>
+<p>To be completely transparent, SaveMyAttachments does <strong>NOT</strong>:</p>
+<ul>
+<li>Store your email content on our servers</li>
+<li>Read your emails for any purpose other than the backup you request</li>
+<li>Share your email content with third parties (except OpenRouter if you opt-in)</li>
+<li>Use your data for advertising or marketing purposes</li>
+<li>Sell your data to anyone</li>
+<li>Train AI models on your email content</li>
+<li>Access your data after processing is complete</li>
+</ul>
+<h2>International Data Transfers</h2>
+<p>Your email data remains within your Google Workspace environment and is subject to Google&#39;s data residency policies.</p>
+<p>If you use optional AI features:</p>
+<ul>
+<li>Email text may be transmitted to OpenRouter.ai servers (location varies by model provider)</li>
+<li>This transfer occurs only when you enable AI and provide your API key</li>
+<li>You can disable AI features at any time to prevent any external data transmission</li>
+</ul>
+<h2>Data Breach Notification</h2>
+<p>In the unlikely event of a security breach affecting your data:</p>
+<ul>
+<li>We will notify you via email at your registered support email within 72 hours</li>
+<li>We will provide details about what data was affected</li>
+<li>We will outline steps we&#39;re taking to address the breach</li>
+</ul>
+<p><strong>Note:</strong> Since your email content and files remain in your Google account, they are protected by Google&#39;s security infrastructure.</p>
 <h2>Children&#39;s Privacy</h2>
 <p>Our services are not intended for users under 13 years of age. We do not knowingly collect information from children under 13.</p>
 <h2>Changes to This Policy</h2>
