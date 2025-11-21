@@ -32,7 +32,8 @@ async function buildSite() {
         'logo-abstract.svg',
         'logo-horizontal.svg',
         'logo-compact.svg',
-        'support.html'
+        'support.html',
+        'privacy.html'
     ];
 
     for (const file of staticFiles) {
@@ -220,6 +221,7 @@ function generateHomepage(frontmatter, aboutContent) {
                 <a href="#products">Products</a>
                 <a href="#about">About</a>
                 <a href="/support.html">Support</a>
+                <a href="/privacy.html" class="privacy-link">Privacy</a>
             </div>
         </nav>
     </header>
@@ -318,6 +320,7 @@ function generatePage({ title, description, content, category }) {
                 <a href="/#products">Products</a>
                 <a href="/#about">About</a>
                 <a href="/support.html">Support</a>
+                <a href="/privacy.html" class="privacy-link">Privacy</a>
             </div>
         </nav>
     </header>
